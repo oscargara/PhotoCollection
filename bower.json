@@ -1,0 +1,10 @@
+{
+    "name": "Photo Collection Manager",
+    "dependencies": {
+        "requirejs" : "*",
+        "underscore" : "*",
+        "jquery" : "*",
+        "jquery-ui" : "*",
+        "backbone": "*"
+    }
+}

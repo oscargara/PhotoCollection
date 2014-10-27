@@ -1,0 +1,9 @@
+#main-container ul li {
+    margin: 5px;
+    padding: 5px;
+    list-style-type: none;
+    border-width: 2px;
+    border-color: gray;
+    border-style: solid;
+    display: inline-block;
+}
