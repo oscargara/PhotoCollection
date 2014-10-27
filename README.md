@@ -1,3 +1,6 @@
-To install:
+Installation / Usage
+--------------------
 
-bower install
+``` sh
+    bower install
+```
