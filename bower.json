@@ -6,5 +6,8 @@
         "jquery" : "*",
         "jquery-ui" : "*",
         "backbone": "*"
+    },
+    "devDependencies": {
+        "jasmine": "*"
     }
 }
