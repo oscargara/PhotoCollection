@@ -1,6 +1,6 @@
 <?php
 
-$target_path = __DIR__ . "/photos/";
+$target_path =  "./photos/";
 $allReturns = array();
 
 for($i=0; $i<count($_FILES['photo-files']['name']); $i++){
