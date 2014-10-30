@@ -1,11 +1,8 @@
 define(['jquery'], function($) {
-    var UploaderToServer = function(){
+    var Server = function(){
 
         var upload = function($form, callback, that){
             var formData = new FormData($form[0]);
-
-            console.log(formData);
-
             $.ajax({
                 url: './upload.php',
                 type: 'POST',
@@ -29,6 +26,6 @@ define(['jquery'], function($) {
         this.upload = upload;
     };
 
-    return UploaderToServer;
+    return Server;
 });
 

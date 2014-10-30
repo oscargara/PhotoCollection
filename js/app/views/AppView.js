@@ -5,8 +5,8 @@ define([
     'views/PhotoCollectionView',
     'views/UploaderView',
     'models/PhotoCollection',
-    'lib/Uploaders/LocalStorage'
-], function ($, jqueryUi, Backbone, PhotoCollectionView, UploaderView, PhotoCollection, Uploader) {
+    'lib/Uploaders/Factory'
+], function ($, jqueryUi, Backbone, PhotoCollectionView, UploaderView, PhotoCollection, UploaderFactory) {
 
     var AppView = Backbone.View.extend({
 
@@ -22,7 +22,9 @@ define([
 
             photoCollection.fetch();
 
-            var uploaderView = new UploaderView({photoCollection: photoCollection, uploader: new Uploader()});
+            var uploader = (new UploaderFactory()).build('LocalStorage');
+
+            var uploaderView = new UploaderView({photoCollection: photoCollection, uploader: uploader});
 
             $(this.el).append(uploaderView.render().el);
 

@@ -1,5 +1,5 @@
 define(['jquery'], function($) {
-    var UploaderToLocalStorage = function(){
+    var LocalStorage = function(){
 
         var upload = function($form, callback, that){
 
@@ -21,6 +21,6 @@ define(['jquery'], function($) {
         this.upload = upload;
     };
 
-    return UploaderToLocalStorage;
+    return LocalStorage;
 });
 
