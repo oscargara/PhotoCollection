@@ -22,7 +22,7 @@ define([
 
             photoCollection.fetch();
 
-            var uploader = (new UploaderFactory()).build('LocalStorage');
+            var uploader = (new UploaderFactory()).build('Server');
 
             var uploaderView = new UploaderView({photoCollection: photoCollection, uploader: uploader});
 

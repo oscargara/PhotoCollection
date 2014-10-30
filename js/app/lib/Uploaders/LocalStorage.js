@@ -1,5 +1,5 @@
 define(['jquery'], function($) {
-    var LocalStorage = function(){
+    var LocalStorage = function(NavigatorFileReader){
 
         var upload = function($form, callback, that){
 
@@ -7,7 +7,7 @@ define(['jquery'], function($) {
 
             if (input.files && input.files.length>0) {
                 for(var i=0; i<input.files.length; ++i){
-                    var reader = new FileReader();
+                    var reader = new NavigatorFileReader();
                     var me = this;
                     reader.onload = function (e) {
                         var data = {error: false, id: Math.round(Math.random()*10000000) , url: e.target.result};

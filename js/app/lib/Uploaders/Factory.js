@@ -6,10 +6,10 @@ define([
         var Factory = function(){
             var build = function(className){
                 if('Server' == className) {
-                    return new Server();
+                    return new Server(FormData);
                 }
                 if('LocalStorage' == className){
-                    return new LocalStorage();
+                    return new LocalStorage(FileReader);
                 }
             };
             this.build = build;
