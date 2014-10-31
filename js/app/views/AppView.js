@@ -28,11 +28,6 @@ define([
 
             $(this.el).append(uploaderView.render().el);
 
-            $(function() {
-                $( "#sortable" ).sortable();
-                $( "#sortable" ).disableSelection();
-            });
-
         }
     });
 
