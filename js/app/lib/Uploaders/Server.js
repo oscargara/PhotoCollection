@@ -3,6 +3,7 @@ define(['jquery'], function($) {
 
         var upload = function($form, callback, that){
             var formData = new NavigatorFormData($form[0]);
+
             $.ajax({
                 url: './upload.php',
                 type: 'POST',

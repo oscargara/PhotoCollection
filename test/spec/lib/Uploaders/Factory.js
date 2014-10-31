@@ -1,7 +1,8 @@
 define(
-    ['lib/Uploaders/Factory',
-    'lib/Uploaders/Server',
-    'lib/Uploaders/LocalStorage'
+    [
+        'lib/Uploaders/Factory',
+        'lib/Uploaders/Server',
+        'lib/Uploaders/LocalStorage'
     ],
     function(Factory, Server, LocalStorage) {
     describe("Photo Uploader factory", function() {
